@@ -1,0 +1,6 @@
+# Install:  pip install -r requirements-dev.txt
+#           pip install --no-deps -r backend/requirements-nodeps.txt
+-r backend/requirements.txt
+-r frontend/requirements.txt
+pytest==8.3.3
+pymupdf==1.28.2   # renders PDF pages in tests

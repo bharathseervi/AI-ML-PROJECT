@@ -1,0 +1,5 @@
+# Install with:  pip install --no-deps -r backend/requirements-nodeps.txt
+# grad-cam declares "opencv-python" (the non-headless build) as a dependency. That build needs system GUI
+# libraries and fails on Hugging Face's Linux image, so we install grad-cam WITHOUT its dependencies and
+# provide opencv-python-headless and the rest ourselves in requirements.txt.
+grad-cam==1.5.4

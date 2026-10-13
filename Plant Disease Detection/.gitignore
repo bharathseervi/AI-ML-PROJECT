@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+
+# Trained weights are large; deploy them separately (see README / Stage 5).
+models/*
+!models/.gitkeep
+
+# 5.6 GB dataset and the prepared copy, never commit
+RiceLeafDiseaseBD*/
+data_prepared/
+*.zip
+
+# your own test photos and the scoring results (personal data, not source code)
+my_photos/
+results/
+
+# demo photos taken from the dataset (some were in the training data, so they are NOT a test)
+demo_photos/

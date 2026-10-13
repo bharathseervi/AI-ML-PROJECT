@@ -1,0 +1,14 @@
+# Streamlit reads this file from the folder it is LAUNCHED in (the project root), not from frontend/.
+# run_dev.ps1 starts it from the project root.
+
+[theme]
+base = "light"                 # the app has its own light/dark switch (frontend/theme.py)
+primaryColor = "#1f7a3d"
+font = "sans serif"
+
+[server]
+maxUploadSize = 10             # MB, matches the backend limit
+enableStaticServing = true     # serves frontend/static/ (the background photo) at /app/static/
+
+[browser]
+gatherUsageStats = false
